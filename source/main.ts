@@ -60,7 +60,9 @@ class SandPainter {
 
   /**
    * Construct a {@link SandPainter}.
-   * @param canvas
+   * @param canvas -
+   * @param random -
+   * @param options -
    */
   constructor(canvas: Canvas2D, random: Random, options: ApplicationOptions) {
     this.canvas = canvas;
@@ -96,10 +98,10 @@ class SandPainter {
 
   /**
    * Renders a line of grains.
-   * @param x The X coordinate to draw to.
-   * @param y The Y coordinate to draw to.
-   * @param ox The X coordinate of the origin.
-   * @param oy The Y coordinate of the origin.
+   * @param x - The X coordinate to draw to.
+   * @param y - The Y coordinate to draw to.
+   * @param ox - The X coordinate of the origin.
+   * @param oy - The Y coordinate of the origin.
    */
   renderSandpainter(x: number, y: number, ox: number, oy: number) {
     // modulate gain
@@ -159,15 +161,17 @@ class Walker {
 
   /**
    * Constructs a new {@link Walker}.
-   * @param canvas The canvas to interact with.
-   * @param random The PRNG to use.
-   * @param position The position to start from.
-   * @param direction The direction of the walker.
-   * @param isFirst Is this the first row or column?
-   * @param isLast Is this the last row or column?
-   * @param pieceCount How many pieces are there per row/column?
-   * @param pieceEdgeLength How long is each piece edge?
-   * @param flipIndex
+   * @param canvas - The canvas to interact with.
+   * @param random - The PRNG to use.
+   * @param options -
+   * @param position - The position to start from.
+   * @param direction - The direction of the walker.
+   * @param isFirst - Is this the first row or column?
+   * @param isLast - Is this the last row or column?
+   * @param pieceCount - How many pieces are there per row/column?
+   * @param pieceEdgeLength - How long is each piece edge?
+   * @param pieces -
+   * @param flipIndex -
    */
   constructor(
     canvas: Canvas2D,
@@ -279,9 +283,9 @@ class Walker {
   }
 
   /**
-   *
-   * @param timestamp
-   * @param skipSandpainter
+   * Draw the walker.
+   * @param timestamp -
+   * @param skipSandpainter -
    */
   drawWalker(timestamp: number, skipSandpainter: boolean) {
     let cx = this.position.x + randomRange(-this.options.fuzzyness, this.options.fuzzyness);
@@ -361,9 +365,9 @@ class Application {
   }
 
   /**
-   *
-   * @param _delta
-   * @param timestamp
+   * Draw a frame.
+   * @param _delta -
+   * @param timestamp -
    */
   onDraw(_delta: number, timestamp: number) {
     if (this.paused) {
