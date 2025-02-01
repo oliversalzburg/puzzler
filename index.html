@@ -2,10 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>My Project</title>
-    <link rel="stylesheet" href="./source/index.css" />
+    <meta property="og:image" content="https://oliversalzburg.github.io/puzzler/canvas.png" />
+    <meta property="og:title" content="Puzzler" />
+    <meta property="og:description" content="A canvas experiment by Oliver Salzburg" />
+    <meta property="og:url" content="https://oliversalzburg.github.io/puzzler/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Puzzler</title>
   </head>
-  <body>
-    <script type="module" src="./source/index.ts"></script>
+
+  <body style="display: none">
+    <canvas id="palette" width="1024" height="16" style="display: none"></canvas>
+    <div id="container">
+      <div id="paused" style="display: none">II</div>
+      <canvas id="main" class="darkMode" width="512" height="512"></canvas>
+    </div>
+    <p class="credits">
+      a canvas experiment by <a href="https://github.com/oliversalzburg">Oliver Salzburg</a>
+    </p>
   </body>
+  <script src="source/main.ts" type="module"></script>
 </html>
