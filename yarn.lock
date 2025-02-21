@@ -682,7 +682,7 @@ __metadata:
     "@oliversalzburg/eslint-config": "npm:2.0.0"
     "@oliversalzburg/js-utils": "npm:0.2.3"
     "@types/eslint": "npm:9.6.1"
-    "@types/web": "npm:0.0.202"
+    "@types/web": "npm:0.0.205"
     esbuild: "npm:0.25.0"
     eslint: "npm:9.20.1"
     eslint-config-prettier: "npm:10.0.1"
@@ -1031,10 +1031,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/web@npm:0.0.202":
-  version: 0.0.202
-  resolution: "@types/web@npm:0.0.202"
-  checksum: 10c0/45967be507c4011970afe3d244cbf5af93d7f6ebbbe44e21d81007c8e1866bd97f1eb92723a582af47a6618f1f043b6037669a115cd5f13f381bbeb7cb3ccda8
+"@types/web@npm:0.0.205":
+  version: 0.0.205
+  resolution: "@types/web@npm:0.0.205"
+  checksum: 10c0/94e332898e746ca5800b90ae256b31b347be8b606792fa18c1372b538dc0c6b0bb597179b328d65c97e204c627a82712aac1e0d7689ef90100a88554e7729acf
   languageName: node
   linkType: hard
 
