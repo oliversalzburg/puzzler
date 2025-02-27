@@ -359,7 +359,11 @@ class Application {
     this.canvas.canvasElement.width = minDimension / 2;
     this.canvas.refreshCanvasNode();
 
-    this.options = { ...this.options, ...options, scale: minDimension / 2 / 512 };
+    this.options = {
+      ...this.options,
+      ...options,
+      scale: minDimension / 2 / 512,
+    };
     this.canvas = canvas;
     this.random = new Random(this.options.seed);
   }
@@ -388,7 +392,6 @@ class Application {
         this.canvas.height - this.options.padding < walker.position.y
       ) {
         toReplace.push(this.walker.indexOf(walker));
-        continue;
       }
     }
 
