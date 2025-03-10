@@ -414,7 +414,7 @@ __metadata:
     typescript: "npm:5.8.2"
     vite: "npm:6.2.1"
     vite-plugin-html: "npm:3.2.2"
-    vite-plugin-singlefile: "npm:2.1.0"
+    vite-plugin-singlefile: "npm:2.2.0"
   languageName: unknown
   linkType: soft
 
@@ -2105,15 +2105,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-singlefile@npm:2.1.0":
-  version: 2.1.0
-  resolution: "vite-plugin-singlefile@npm:2.1.0"
+"vite-plugin-singlefile@npm:2.2.0":
+  version: 2.2.0
+  resolution: "vite-plugin-singlefile@npm:2.2.0"
   dependencies:
     micromatch: "npm:^4.0.8"
   peerDependencies:
-    rollup: ^4.28.1
+    rollup: ^4.35.0
     vite: ^5.4.11 || ^6.0.0
-  checksum: 10c0/04b41a05ad9228011ec81dc06426b93724adfe8d7b966aa8c6e28da746be3c1b20b17451201172514df84f60b71cd8fe2477d57cd0cc346727c27a41f19702d3
+  checksum: 10c0/a0a166283b5c01cedfd07fac6cf675c14f4af1eb7e6a2c73416054cd0110128c41f63d66b1d3cef1026878bc817397478384a3d67dea01c0a82fd2088e4c2c20
   languageName: node
   linkType: hard
 

@@ -15,7 +15,7 @@
     "typescript": "5.8.2",
     "vite": "6.2.1",
     "vite-plugin-html": "3.2.2",
-    "vite-plugin-singlefile": "2.1.0"
+    "vite-plugin-singlefile": "2.2.0"
   },
   "packageManager": "yarn@4.7.0"
 }
