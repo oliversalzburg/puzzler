@@ -17,5 +17,5 @@
     "vite-plugin-html": "3.2.2",
     "vite-plugin-singlefile": "2.2.0"
   },
-  "packageManager": "yarn@4.9.0"
+  "packageManager": "yarn@4.9.1"
 }
