@@ -9,8 +9,8 @@ import {
 } from "@oliversalzburg/js-utils/graphics/canvas2d.js";
 import { fromRGBA } from "@oliversalzburg/js-utils/graphics/core.js";
 import { palette } from "@oliversalzburg/js-utils/graphics/palette.js";
-import { TWO_PI, clamp, distance } from "@oliversalzburg/js-utils/math/core.js";
-import { Vector2, subtractVector2 } from "@oliversalzburg/js-utils/math/vector2.js";
+import { clamp, distance, TWO_PI } from "@oliversalzburg/js-utils/math/core.js";
+import { subtractVector2, Vector2 } from "@oliversalzburg/js-utils/math/vector2.js";
 
 const canvasNode = getDocumentElementTypeByIdStrict(document, "main", HTMLCanvasElement);
 
@@ -31,18 +31,18 @@ const applicationOptions = {
   fuzzyness: 0,
   iterationsPerUpdate: 1,
   padding: 20,
-  pieceCount: 12,
   particleCount: 1000,
+  pieceCount: 12,
   sandPainterGrains: 50,
   scale: 1,
   seed: seedFromString("gencha"),
   useSandPainter: true,
 
   viewport: {
+    h: 1,
+    w: 1,
     x: 0,
     y: 0,
-    w: 1,
-    h: 1,
   },
 };
 
