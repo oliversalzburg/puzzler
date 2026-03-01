@@ -278,7 +278,7 @@ class Application {
           walker.position.x < this.options.padding ||
           this.canvas.width - this.options.padding < walker.position.x ||
           walker.position.y < this.options.padding ||
-          this.canvas.height - this.options.padding < walker.position.y 
+          this.canvas.height - this.options.padding < walker.position.y
         ) {
           toReplace.push(this.walker.indexOf(walker));
         }
