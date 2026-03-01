@@ -1,4 +1,3 @@
-import { createHtmlPlugin } from "vite-plugin-html";
 import { viteSingleFile } from "vite-plugin-singlefile";
 
 /**
@@ -12,5 +11,5 @@ export default {
     },
     outDir: "_site",
   },
-  plugins: [createHtmlPlugin(), viteSingleFile()],
+  plugins: [viteSingleFile()],
 };
